@@ -1,0 +1,85 @@
+/* Dashboard content area */
+.dashboard-verify {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Same dashboard box */
+.verify-box {
+  background: #ffffff;
+  /* dashboard dark */
+  width: 100%;
+  max-width: 450px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  color: #022242;
+}
+
+/* Title */
+.verify-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #415e8c;
+  /* yellow highlight */
+  font-weight: 600;
+}
+
+/* Input */
+.verify-box input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid blue;
+  outline: none;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+/* Button */
+.verify-box button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 5px 0px;
+}
+
+.verify-box button:disabled {
+  background: #6b7280;
+}
+
+/* Result */
+.verify-result {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.verify-result.valid {
+  background: #064e3b;
+  color: #d1fae5;
+}
+
+.verify-result.invalid {
+  background: #7f1d1d;
+  color: #fee2e2;
+}
+
+/* 📱 Mobile */
+@media (max-width: 480px) {
+  .verify-box {
+    padding: 20px;
+  }
+
+  .verify-title {
+    font-size: 18px;
+  }
+}

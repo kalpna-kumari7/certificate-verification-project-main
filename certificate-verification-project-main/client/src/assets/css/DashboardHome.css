@@ -1,0 +1,98 @@
+/* ===== DASHBOARD LAYOUT ===== */
+.dashboard {
+  background: #f5f7fb;
+  min-height: 100vh;
+}
+
+.content {
+  width: 100%;
+  border: 1px solid rgb(249, 246, 246);
+}
+
+/* ===== HEADER ===== */
+.content-header {
+  background: #ffffff;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-header h4 {
+  font-weight: 600;
+}
+
+.content-header small {
+  font-size: 13px;
+}
+
+/* ===== STATS BOX ===== */
+.stat-box {
+  background: linear-gradient(135deg, #ffffff, #f8f9ff);
+  border-left: 4px solid #49d3b7;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-box h3 {
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: #1e3b31;
+}
+
+.stat-box p {
+  margin: 0;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.stat-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== QUICK ACTIONS ===== */
+.action-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  color: #1f2937;
+  height: 100%;
+  transition: all 0.25s ease;
+}
+
+.action-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  border-color: #52d2a1;
+}
+
+.action-icon {
+  width: 48px;
+  height: 48px;
+  background: #eef2ff;
+  color: #42ba98;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.action-card h6 {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.action-card p {
+  font-size: 13px;
+}
+
+/* ===== QUICK ACTIONS TITLE ===== */
+.content-area h5 {
+  font-weight: 600;
+  color: #0f2a24;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .stat-box h3 {
+    font-size: 22px;
+  }
+}

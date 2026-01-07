@@ -1,0 +1,118 @@
+/* ===== Layout ===== */
+.student-layout {
+  display: flex;
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #1e293b;
+  color: #fff;
+  padding-top: 20px;
+  z-index: 100;
+}
+
+.sidebar-brand {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item {
+  padding: 12px 20px;
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.menu-item:hover,
+.menu-item.active {
+  background-color: #334155;
+  color: #fff;
+}
+
+.logout {
+  margin-top: auto;
+  color: #f87171;
+}
+
+/* ===== Main Content ===== */
+.main-content {
+  margin-left: 250px;
+  padding: 25px;
+  width: calc(100% - 250px);
+  min-height: 100vh;
+  background-color: #f8fafc;
+}
+
+/* ===== Header ===== */
+.dashboard-header {
+  background: linear-gradient(135deg, #1f2933, #111827);
+  color: #fff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.welcome-text h1 {
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+.welcome-text p {
+  color: #d1d5db;
+  margin: 0;
+}
+
+.user-profile-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-info h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.user-info p {
+  margin: 0;
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.user-avatar-large {
+  width: 52px;
+  height: 52px;
+  background: #2563eb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+}
